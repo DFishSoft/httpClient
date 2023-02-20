@@ -12,7 +12,7 @@ class HttpClient{
 
     public function setTimeout($timeout){$this->timeout = $timeout;}
 
-    public function setCookie(){$this->cookie = $cookie;}
+    public function setCookie($cookie){$this->cookie = $cookie;}
 
     public function GET($url, $data = [], $header = []){
         return $this-> sendHttp($url, "GET", $header, $data);
